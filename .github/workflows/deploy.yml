@@ -2,23 +2,34 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm ci
-      - run: npm run build
+
+      - name: Install dependencies
+        working-directory: ./Portfolio
+        run: npm ci
+
+      - name: Build
+        working-directory: ./Portfolio
+        run: npm run build
+
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: Portfolio/dist   # IMPORTANT: correct dist path
+
   deploy:
     environment:
       name: github-pages
