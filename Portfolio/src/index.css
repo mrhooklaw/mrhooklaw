@@ -11,3 +11,29 @@ body {
   font-family: "Fira Code", "Consolas", "Menlo", "Monaco", "Ubuntu Mono",
     "DejaVu Sans Mono", monospace;
 }
+
+#mobile-warning {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  #mobile-warning {
+    display: flex;
+  }
+  #root {
+    display: none;
+  }
+}

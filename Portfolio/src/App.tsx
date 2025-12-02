@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import InteractiveGrid from "./components/InteractiveGrid";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
-import Frameworks from "./pages/Frameworks";
+
 
 // Placeholder components for missing pages
 const Projects = () => (
@@ -32,7 +32,7 @@ function App() {
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/frameworks" element={<Frameworks />} />
+
             <Route path="/projects" element={<Projects />} />
             <Route path="/source-code" element={<SourceCode />} />
           </Routes>

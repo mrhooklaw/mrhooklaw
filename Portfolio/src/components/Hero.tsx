@@ -77,8 +77,7 @@ export default function Hero() {
                                 Luau Developer | Python | C++ | C | Rust
                             </p>
                             <p className="text-gray-400">
-                                I have been doing Luau for more than 1 year. I am passionate about
-                                low-level programming and game development.
+                                With over a year of experience in Luau, I have developed a strong passion for low-level programming and game development. I am a dedicated learner, always eager to master new concepts and refine my skills to create immersive game experiences.
                             </p>
                             <div className="pt-6">
                                 <h3 className="text-sm text-gray-500 mb-3 uppercase tracking-wider">
@@ -131,6 +130,8 @@ export default function Hero() {
                             </span>
                         </button>
                     </motion.div>
+
+
 
                     {/* Frameworks Terminal */}
                     <motion.div
