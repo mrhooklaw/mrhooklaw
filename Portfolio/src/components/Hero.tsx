@@ -112,7 +112,7 @@ export default function Hero() {
                     >
                         <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/10">
                             <img
-                                src="/profilePic.jpg"
+                                src="/profilePic.png"
                                 alt="MrHooksLaw"
                                 width={128}
                                 height={128}
